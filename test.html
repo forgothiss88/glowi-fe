@@ -20,8 +20,7 @@
 <script type="module">
     const urlParams = new URLSearchParams(window.location.search);
     const version = urlParams.get('v') || '0.0.42';
-    const twiniLib = await import(`https://cdn.jsdelivr.net/npm/@glowi/glowi-chatbot@${version}/dist/web.js`);
-    const { bot } = twiniLib;
+    const bot = await import(`https://cdn.jsdelivr.net/npm/@glowi/glowi-chatbot@${version}/dist/web.js`);
     bot.initFullWithDefaults(
         'twini-stream',
         null,
