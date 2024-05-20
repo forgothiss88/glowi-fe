@@ -19,8 +19,8 @@
 
 <script type="module">
     const version = urlParams.get('v') || '0.0.42';
-    const url = `https://cdn.jsdelivr.net/npm/@glowi/glowi-chatbot@${version}/dist/web.js`
-    import bot from url;
+    const twiniLib = await import(`https://cdn.jsdelivr.net/npm/@glowi/glowi-chatbot@${version}/dist/web.js`);
+    const { bot } = twiniLib;
     bot.initFullWithDefaults(
         'twini-stream',
         null,
