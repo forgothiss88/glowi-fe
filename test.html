@@ -5,7 +5,7 @@
 <head>
     <title>Twini Chatbot</title>
     <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
 </head>
 
 <style>
@@ -14,13 +14,11 @@
 </style>
 
 <body style="margin: 0px">
-    <div style="width: min(800px, 100vw); margin-left: auto; margin-right: auto;">
-        <flowise-fullchatbot></flowise-fullchatbot>
-    </div>
+    <flowise-fullchatbot></flowise-fullchatbot>
 </body>
 
 <script type="module">
-    import bot from "https://cdn.jsdelivr.net/npm/@glowi/glowi-chatbot@0.0.39/dist/web.js";
+    import bot from "https://cdn.jsdelivr.net/npm/@glowi/glowi-chatbot@0.0.40/dist/web.js";
     bot.initFullWithDefaults(
         'twini-stream',
         null,
