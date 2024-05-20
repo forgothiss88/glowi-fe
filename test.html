@@ -18,8 +18,9 @@
 </body>
 
 <script type="module">
-    const version = urlParams.get('v') || '42';
-    import bot from `https://cdn.jsdelivr.net/npm/@glowi/glowi-chatbot@0.0.${version}/dist/web.js`;
+    const version = urlParams.get('v') || '0.0.42';
+    const url = `https://cdn.jsdelivr.net/npm/@glowi/glowi-chatbot@${version}/dist/web.js`
+    import bot from url;
     bot.initFullWithDefaults(
         'twini-stream',
         null,
