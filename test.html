@@ -19,11 +19,9 @@
 
 <script type="module">
     window.onresize = () => {
-        // alert window size
-        console.log(window.innerWidth + 'x' + window.innerHeight);
-        console.log(window.outerWidth + 'x' + window.outerHeight);
-        alert(window.innerWidth + 'x' + window.innerHeight);
-        alert(window.outerWidth + 'x' + window.outerHeight);
+        window.visualViewport.onresize = () => {
+            alert(window.visualViewport.height);
+        };
     };
     const urlParams = new URLSearchParams(window.location.search);
     const version = urlParams.get('v') || '0.0.42';
