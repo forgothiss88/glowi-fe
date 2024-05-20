@@ -21,7 +21,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const version = urlParams.get('v') || '0.0.42';
     const bot = await import(`https://cdn.jsdelivr.net/npm/@glowi/glowi-chatbot@${version}/dist/web.js`);
-    bot.initFullWithDefaults(
+    bot.default.initFullWithDefaults(
         'twini-stream',
         null,
         '/twini-chatbot-fe/assets/avatars/holidoit.jpg',
