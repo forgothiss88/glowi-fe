@@ -18,6 +18,13 @@
 </body>
 
 <script type="module">
+    window.onresize = () => {
+        // alert window size
+        console.log(window.innerWidth + 'x' + window.innerHeight);
+        console.log(window.outerWidth + 'x' + window.outerHeight);
+        alert(window.innerWidth + 'x' + window.innerHeight);
+        alert(window.outerWidth + 'x' + window.outerHeight);
+    };
     const urlParams = new URLSearchParams(window.location.search);
     const version = urlParams.get('v') || '0.0.42';
     const bot = await import(`https://cdn.jsdelivr.net/npm/@glowi/glowi-chatbot@${version}/dist/web.js`);
