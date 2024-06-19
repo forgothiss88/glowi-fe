@@ -11,10 +11,12 @@
     </style>
 </head>
 
-<body>Hey!</body>
-
+<body class="overflow-hidden" style="margin: 0px">
+    <flowise-fullchatbot></flowise-fullchatbot>
+</body>
 
 <script type="module">
+    // read chatbot version from url parameter
     import bot from "https://cdn.jsdelivr.net/npm/@glowi/glowi-chatbot@0.0.75/dist/web.js";
     bot.initFullWithDefaults({
         apiUrl: 'https://twini-be-production.up.railway.app/twini-stream/holidoit',
