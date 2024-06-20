@@ -13,7 +13,7 @@
 
 <script type="module">
     import bot from "https://cdn.jsdelivr.net/npm/@glowi/glowi-chatbot@0.0.80/dist/web.js";
-    bot.initFullWithDefaults({
+    bot.initWithDefaults({
         apiUrl: 'http://localhost:8000/twini-stream/hdblog',
         creatorName: 'hdblog',
         avatarSrc: '/twini-chatbot-fe/assets/avatars/hdblog_small.svg',
@@ -75,7 +75,6 @@
 </script>
 
 <body class="overflow-hidden" style="margin: 0px">
-    <flowise-fullchatbot></flowise-fullchatbot>
 </body>
 
 </html>
