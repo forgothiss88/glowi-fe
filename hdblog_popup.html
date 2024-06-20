@@ -12,26 +12,27 @@
 </head>
 
 <script type="module">
-    import bot from "https://cdn.jsdelivr.net/npm/@glowi/glowi-chatbot@0.0.81/dist/web.js";
+    import bot from "https://cdn.jsdelivr.net/npm/@glowi/glowi-chatbot@0.0.82/dist/web.js";
     bot.initWithDefaults({
         apiUrl: 'http://localhost:8000/twini-stream/hdblog',
         creatorName: 'hdblog',
-        avatarSrc: '/twini-chatbot-fe/assets/avatars/hdblog_small.svg',
-        titleAvatarSrc: '/twini-chatbot-fe/assets/avatars/hdblog_large.svg',
-        starterPrompts: ['Il migliore smartphone sotto i 200€?', 'Iphone 15 vs Galaxy S22?', 'Top pc per un grafico?'],
         theme: {
             button: {
-                topbarColor: 'rgba(78,184,222,1)',
                 iconColor: 'white',
                 bubbleButtonColor: 'rgba(78,184,222,1)',
             },
             chatWindow: {
                 title: 'Ciao! Sono il tuo assistente AI 😊',
+                titleColor: 'black',
                 welcomeMessage: 'Qui puoi chiedermi tutto sui miei contenuti e prodotti. Ti aiuterò a trovare ciò che cerchi in un lampo! ⚡',
                 backgroundColor: 'linear-gradient(180deg, rgba(78,184,222,1) 0%, rgba(78,184,222,1) 25%, rgba(245,245,245,1) 57%)',
                 poweredByTextColor: 'black',
-                titleAvatarSrc: '/twini-chatbot-fe/assets/avatars/hdblog_large.svg',
-                titleColor: 'black',
+                starterPrompts: ['Il migliore smartphone sotto i 200€?', 'Iphone 15 vs Galaxy S22?', 'Top pc per un grafico?'],
+                topbar: {
+                    topbarColor: 'rgba(78,184,222,1)',
+                    avatarSrc: '/twini-chatbot-fe/assets/avatars/hdblog_large.svg',
+                    topbarLink: 'https://www.hdblog.it/',
+                },
                 firstMessage: {
                     text: 'Puoi chiedermi di:',
                     background: 'white',
